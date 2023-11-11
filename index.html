@@ -24,11 +24,23 @@
 </head>
 <body>
     <p>In bootstrap the max grid columns across a row has to add up to 12!</p></br>
-
+    <p>Three column layouts will work on tablets in landscape mode without stacking.
+        Only if the tablet screen resolution is => 1200px width *!992px!*.
+        On Apple iPad in smaller devices the columns will stack on top of each other as usual.
+    </p>
     <div class="row">
-        <div class="col-lg-6 bg1">Sample Paragraph 1</div>
-        <div class="col-lg-6 bg2">Sample Paragraph 2</div>
+        <div class="col-lg-4 bg1">Sample Paragraph 1</div>
+        <div class="col-lg-4 bg2">Sample Paragraph 2</div>
+        <div class="col-lg-4 bg1">Sample Paragraph 3</div>
+    </div></br>
+    <div class="row">
+        <div class="col-lg-2 bg1">Sample Paragraph 1</div>
+        <div class="col-lg-8 bg2">Sample Paragraph 2</div>
+        <div class="col-lg-2 bg1">Sample Paragraph 3</div>
+    </div></br>
+    <div class="row">
+        <div class="col-lg-3 bg1">Sample Paragraph 1</div>
+        <div class="col-lg-7 bg2">Sample Paragraph 2</div>
+        <div class="col-lg-2 bg1">Sample Paragraph 3</div>
     </div>
-    
 </body>
-</html>
