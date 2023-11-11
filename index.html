@@ -18,35 +18,31 @@
     <title>Bootstrap Example</title>
   </head>
   <body>
-    <p>These button groups are by default Horizontal.</p>
+    <p> To have one group spanned the entire width of the screen we can use the button group justified class.</p>
+    <p> These button groups are responsive</p>
     <div class="container">
-        <h4>Large Buttons:</h4>
-        <div class="btn-group btn-group-lg">
-            <button type="button" class="btn btn-primary">Home</button>
-            <button type="button" class="btn btn-primary">Company</button>
-            <button type="button" class="btn btn-primary">Contact</button>
+        <!-- Justified Button Groups Using Link Elements -->
+        <h4>Justified Button Groups</h4>
+        <div class="btn-group btn-group-justified">
+            <a href="#" class="btn btn-primary">Home</a>
+            <a href="#" class="btn btn-primary">Company</a>
+            <a href="#" class="btn btn-primary">Contract</a>
         </div>
+        <hr/>
 
-        <h4>Extra Small Buttons:</h4>
-        <div class="btn-group btn-group-xs">
-            <button type="button" class="btn btn-primary">Home</button>
-            <button type="button" class="btn btn-primary">Company</button>
-            <button type="button" class="btn btn-primary">Contact</button>
+        <!-- Justified Button Groups Using Button Elements -->
+        <div class="btn-group btn-group-justified">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">Home</button>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">Company</button>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">Contract</button>
+            </div>
         </div>
-
-        <h4>Large Buttons:</h4>
-        <div class="btn-group-vertical btn-group-lg">
-            <button type="button" class="btn btn-primary">Home</button>
-            <button type="button" class="btn btn-primary">Company</button>
-            <button type="button" class="btn btn-primary">Contact</button>
-        </div>
-
-        <h4>Extra Small Buttons:</h4>
-        <div class="btn-group-vertical btn-group-xs">
-            <button type="button" class="btn btn-primary">Home</button>
-            <button type="button" class="btn btn-primary">Company</button>
-            <button type="button" class="btn btn-primary">Contact</button>
-        </div>
+       
     </div>
   </body>
 </html>
