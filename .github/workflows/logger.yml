@@ -1,12 +1,18 @@
 # .github/workflows/logger.yaml
-name: Event Loggger
-on: push
+name: Logger
+
+on:
+  push:
+    branches:
+      - main  # Replace with your branch name if needed
 
 jobs:
   log-github-event-goodies:
     name: "LOG Everything on GitHub Event"
     runs-on: ubuntu-latest
     steps:
-      - name: Logging
-        run: |
-          echo "${{toJSON(github.event)}}"
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Display Commit Message
+        run: echo "${{ github.event.head_commit.message }}"
