@@ -13,21 +13,25 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <title>Bootstrap Example</title>
-    <style>
-        body{
-            background: black;
-        }
-        .cw{
-            color:white;
-        }
-    </style>
+ 
 </head>
 <body>
+    <p><code>jumbotron</code> outside the <code>container</code> class is responsive</p><br/>
+    <div class="jumbotron">
+        <h1>Heading</h1>
+        <p>Sub-Title</p>
+    </div>
+
     <div class="container">
-        <img class="img-rounded" src="assets/img.png" alt="" width="300" height="500">
-        <img class="img-circle" src="assets/img.png" alt="" width="300" height="500">
-        <p class="cw"> The <code>img-thumbnail</code> & <code>img-responsive</code> makes the image responsive.</p>
-        <img class="img-thumbnail" src="assets/img.png" alt="" width="300" height="500">
-        <img class="img-responsive" src="assets/img.png" alt="" width="300" height="500">
+        <div class="jumbotron">
+            <h1>Heading</h1>
+            <p>Sub-Title</p>
+        </div>
+        <div class="page-header">
+            <h1>Page Heading</h1>
+            <p>Sub-Title</p>
+        </div>
+
+        <p>Page content can start here ...</p>
     </div>
 </body> 
