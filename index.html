@@ -18,52 +18,44 @@
     <title>Bootstrap Example</title>
   </head>
   <body>
-    <p>
-      Adding the <code>class="close"</code> &
-      <code>data-dismiss="alert"</code> attributes allows the alert to be
-      dismissed
-    </p>
-    <ul>
-      <li>
-        The <code>href="#"</code> is used to make the link clickable but without
-        navigating to a different page.
-      </li>
-      <li>
-        The <code>&times;</code> is the HTML entity for the "times" symbol (×),
-        typically used to create a close button.
-      </li>
-      <li>
-        The <code>data-dismiss="alert"</code> attribute is a Bootstrap-specific
-        attribute. It tells Bootstrap to dismiss the alert when the close button
-        is clicked.
-      </li>
-    </ul>
-    <i>
-      When a user clicks the close button (&times;), the data-dismiss="alert"
-      attribute triggers Bootstrap to dismiss (close) the alert. This is a
-      convenient way to provide users with the option to close the alert if they
-      no longer need to see it. It's worth noting that Bootstrap utilizes
-      JavaScript for this functionality. Therefore, if you're using Bootstrap's
-      JavaScript components, make sure that Bootstrap's JavaScript file is
-      included in your project. The Bootstrap JavaScript file includes the
-      necessary functions to handle the dismissal of alerts and other
-      interactive components.
-    </i>
     <div class="container">
-      <br />
-      <div class="alert alert-success fade in">
-        <a href="#" class="close" data-dismiss="alert">&times;</a>
-        <strong>Success!</strong>
-      </div>
-      <div class="alert alert-info">
-        <strong>Info!</strong>
-      </div>
-      <div class="alert alert-warning">
-        <strong>Warning!</strong>
-      </div>
-      <div class="alert alert-danger">
-        <strong>Danger!</strong>
-      </div>
+    <br/>
+        <!-- Button Styles -->
+        <button type="button" class="btn btn-default">Default</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-link">Link</button>
+
+        <hr/>
+        <a href="#" class="btn btn-info" role="button">Link Button</a>
+        <input type="button" class="btn btn-primary" value="Input Button">
+        <input type="submit" class="btn btn-warning" value="Submit Button">
+
+        <!-- Button Sizes -->
+        <hr/>
+        <button type="button" class="btn btn-primary btn-lg">Large</button>
+        <button type="button" class="btn btn-primary btn-md">Medium</button>
+        <button type="button" class="btn btn-primary btn-sm">Small</button>
+        <button type="button" class="btn btn-primary btn-xs">XSmall</button>
+
+        <!-- Block Level buttons -->
+        <hr/>
+        <button type="button" class="btn btn-primary btn-block">Normal Button 1</button>
+        <button type="button" class="btn btn-default btn-block">Normal Button 2</button>
+
+        <button type="button" class="btn btn-primary btn-lg btn-block">Large Button 1</button>
+        <button type="button" class="btn btn-default btn-lg btn-block">Large Button 2</button>
+
+        <button type="button" class="btn btn-primary btn-sm btn-block">Small Button 1</button>
+        <button type="button" class="btn btn-default btn-sm btn-block">Small Button 2</button>
+
+        <!-- Active/Disabled Buttons -->
+        <hr/>
+        <button type="button" class="btn btn-primary active">Active Primary</button>
+        <button type="button" class="btn btn-primary disabled">Disabled Primary</button>
     </div>
   </body>
 </html>
