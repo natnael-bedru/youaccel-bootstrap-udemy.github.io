@@ -1,0 +1,2 @@
+# youaccel-bootstrap-udemy.github.io
+[![Event Loggger](https://github.com/natnael-bedru/youaccel-bootstrap-udemy.github.io/actions/workflows/logger.yml/badge.svg?branch=main)](https://github.com/natnael-bedru/youaccel-bootstrap-udemy.github.io/actions/workflows/logger.yml)
