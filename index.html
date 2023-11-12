@@ -18,64 +18,59 @@
     <title>Bootstrap Example</title>
   </head>
   <body>
-    <p>Creating tab in pill menus that dynamically update content when link is clicked</p>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">My Website</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <!--  -->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Sub Link 1</a></li>
+              <li><a href="#">Sub Link 2</a></li>
+              <li><a href="#">Sub Link 3</a></li>
+            </ul>
+          </li>
+          <!--  -->
+          <li class="active"><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+  
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-star-empty"></span> RLink 1</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-search"></span> RLink 2</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">My Website</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+  
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-star-empty"></span> RLink 1</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-search"></span> RLink 2</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="container">
-      <h4>Dynamic Tabs and Pills</h4>
-
-      <!-- Dynamic Tabs -->
-      <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#link1">Link 1</a></li>
-        <li><a data-toggle="tab" href="#link2">Link 2</a></li>
-        <li><a data-toggle="tab" href="#link3">Link 3</a></li>
-        <li><a data-toggle="tab" href="#link4">Link 4</a></li>
-      </ul>
-
-      <div class="tab-content">
-        <div id="link1" class="tab-pane fade in active">
-          <h3>Link 1</h3>
-          Content.
-        </div>
-        <div id="link2" class="tab-pane fade in active">
-          <h3>Link 2</h3>
-          Content.
-        </div>
-        <div id="link3" class="tab-pane fade in active">
-          <h3>Link 3</h3>
-          Content.
-        </div>
-        <div id="link4" class="tab-pane fade in active">
-          <h3>Link 4</h3>
-          Content.
-        </div>
-      </div>
-
-      <!-- Dynamic Pills -->
-      <ul class="nav nav-pills">
-        <li class="active"><a data-toggle="pill" href="#link5">Link 5</a></li>
-        <li><a data-toggle="tab" href="#link6">Link 6</a></li>
-        <li><a data-toggle="tab" href="#link7">Link 7</a></li>
-        <li><a data-toggle="tab" href="#link8">Link 8</a></li>
-      </ul>
-
-      <div class="tab-content">
-        <div id="link5" class="tab-pane fade in active">
-          <h3>Link 5</h3>
-          Content.
-        </div>
-        <div id="link6" class="tab-pane fade in active">
-          <h3>Link 6</h3>
-          Content.
-        </div>
-        <div id="link7" class="tab-pane fade in active">
-          <h3>Link 7</h3>
-          Content.
-        </div>
-        <div id="link8" class="tab-pane fade in active">
-          <h3>Link 8</h3>
-          Content.
-        </div>
-      </div>
-
+      <h3>Heading</h3>
+      <p>Content.</p>
+      <p>The navigation bar is fully responsive.</p>
     </div>
+   
   </body>
 </html>
