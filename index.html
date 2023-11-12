@@ -19,52 +19,54 @@
   </head>
   <body>
     <div class="container">
-      <h4>Basic List Group</h4>
+      <h4>Panel</h4>
 
-      <ul class="list-group">
-        <li class="list-group-item active"><span class="badge">12</span>Item 1</li>
-        <li class="list-group-item disabled"><span class="badge">8</span>Item 2</li>
-        <li class="list-group-item">Item 3</li>
-      </ul>
+      <!--  Basic Panel -->
+      <div class="panel panel-default">
+        <div class="panel-body">Simple Text Content.</div>
+      </div>
 
-      <ul class="list-group">
-        <a href="#" class="list-group-item active"><span class="badge">12</span>Item 1</a>
-        <a href="#" class="list-group-item disabled">Item 2</a>
-        <a href="#" class="list-group-item">Item 3</a>
-      </ul>
+      <div class="panel panel-default">
+        <div class="panel-heading">Panel Header</div>
+        <div class="panel-body">Simple Text Content.</div>
+        <div class="panel-footer">Panel Footer</div>
+      </div>
 
-      <p>Adding contextual styling</p>
-      <ul class="list-group">
-        <a href="#" class="list-group-item list-group-item-success"><span class="badge">12</span>Item 1</a>
-        <a href="#" class="list-group-item list-group-item-success active">Item 2</a>
-        <a href="#" class="list-group-item list-group-item-success disabled">Item 3</a>
-      </ul>
-      <ul class="list-group">
-        <a href="#" class="list-group-item list-group-item-warning"><span class="badge">12</span>Item 1</a>
-        <a href="#" class="list-group-item list-group-item-warning active">Item 2</a>
-        <a href="#" class="list-group-item list-group-item-warning disabled">Item 3</a>
-      </ul>
-      <ul class="list-group">
-        <a href="#" class="list-group-item list-group-item-danger"><span class="badge">12</span>Item 1</a>
-        <a href="#" class="list-group-item list-group-item-danger active">Item 2</a>
-        <a href="#" class="list-group-item list-group-item-danger disabled">Item 3</a>
-      </ul>
+      <!-- Panel Group -->
+      <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-heading">Panel Header</div>
+          <div class="panel-body">Panel Content</div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">Panel Header</div>
+          <div class="panel-body">Panel Content</div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">Panel Header</div>
+          <div class="panel-body">Panel Content</div>
+        </div>
+      </div>
 
-      <p>Adding Heading inside</p>
-      <ul class="list-group">
-        <a href="#" class="list-group-item list-group-item-success"><span class="badge">12</span>
-            <h4 class="list-group-item-heading">Item 1 Heading</h4>
-            <p class="list-group-item-text">List item Text</p>
-        </a>
-        <a href="#" class="list-group-item list-group-item-success active">
-          <h4 class="list-group-item-heading">Item 2 Heading</h4>
-            <p class="list-group-item-text">List item Text</p>
-        </a>
-        <a href="#" class="list-group-item list-group-item-success disabled">
-          <h4 class="list-group-item-heading">Item 3 Heading</h4>
-            <p class="list-group-item-text">List item Text</p>
-        </a>
-      </ul>
+      <p>Using contextual classes</p>
+      <div class="panel-group">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Panel Header</div>
+          <div class="panel-body">Panel Content</div>
+        </div>
+        <div class="panel panel-success">
+          <div class="panel-heading">Panel Header</div>
+          <div class="panel-body">Panel Content</div>
+        </div>
+        <div class="panel panel-warning">
+          <div class="panel-heading">Panel Header</div>
+          <div class="panel-body">Panel Content</div>
+        </div>
+        <div class="panel panel-danger">
+          <div class="panel-heading">Panel Header</div>
+          <div class="panel-body">Panel Content</div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
