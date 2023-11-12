@@ -19,31 +19,27 @@
   </head>
   <body>
     <div class="container">
-      <h4>Badges</h4>
-      <a href="#">Members <span class="badge">8</span></a><br />
-      <a href="#">Messages <span class="badge">5</span></a><br />
-      <a href="#">New Users <span class="badge">7</span></a><br />
+      <h4>Progress Bar</h4>
+      <div class="progress">
+        <div class="progress-bar" role="progress-bar" style="width:50%">50%</div>
+        
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progress-bar" style="width:80%">80%</div>
+      20%
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progress-bar" style="width:80%">80%</div>
+      </div>
 
-      <hr />
-      <button type="button" class="btn btn-primary">Primary <span class="badge">10</span></button>
+      <p> the animation only works on <code>progress-bar-striped</code> class by using <code>active</code></p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progress-bar" style="width:80%">80%</div>
+      </div>
 
-      <hr />
-      <h1>Example <span class="label label-primary">New</span></h1>
-      <h2>Example <span class="label label-warning">New</span></h2>
-      <h3>Example <span class="label label-danger">New</span></h3>
-      <h4>Example <span class="label label-info">New</span></h4>
-
-
-      <hr />
-      <span class="label label-default">Default</span>
-      <span class="label label-primary">Primary</span>
-      <span class="label label-success">Success</span>
-      <span class="label label-info">Info</span>
-      <span class="label label-warning">Warning</span>
-      <span class="label label-danger">Danger</span>
-
-      <hr />
-
+      <div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progress-bar" style="width:80%">80%</div>
+      </div>
     </div>
   </body>
 </html>
