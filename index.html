@@ -18,64 +18,52 @@
     <title>Bootstrap Example</title>
   </head>
   <body>
-    <p> Inputs will not be styled if their types is not properly declared.</p>
     <div class="container">
-      <h4>Form inputs</h4>
+      <h4>Horizontal form: control states</h4>
 
-      <form role="form">
+      <form class="form-horizontal" role="form">
 
-        <!-- Input Fields -->
         <div class="form-group">
-          <label for="usr">Name: </label>
-          <input type="text" class="form-control" id="usr">
+          <label class="col-sm-2 control-label" for="focused">Focused</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="focused" type="text" value="Click to Focus">
+          </div>
         </div>
 
-        <!-- Text Area -->
         <div class="form-group">
-          <label for="comment">Comment: </label>
-          <textarea class="form-control" rows="5" id="comment"></textarea>
+          <label class="col-sm-2 control-label" for="disabled">Disabled</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="disabled" type="text" value="Disabled" disabled>
+          </div>
         </div>
 
-        <!-- Check Boxes -->
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Option 1</label>
+        <div class="form-group has-success has-feedback">
+          <label class="col-sm-2 control-label" for="success">Success</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="success">
+            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+          </div>
         </div>
 
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Option 2</label>
+        <div class="form-group has-warning has-feedback">
+          <label class="col-sm-2 control-label" for="warning">Warning</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="warning">
+            <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+          </div>
         </div>
 
-        <!-- Radio Buttons -->
-        <div class="radio">
-          <label><input type="radio" name="optradio">Option 1</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="optradio">Option 2</label>
-        </div>
-
-        <!-- Select Menu -->
-        <div class="form-group">
-          <label for="sel">Select list:</label>
-          <select class="form-control" id="sel">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-          </select>
-        </div>
-
-        <!-- Multiple Select -->
-        <div class="form-group">
-          <label for="msel">Multiple Select list:</label>
-          <select multiple class="form-control" id="msel">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-          </select>
+        <div class="form-group has-error has-feedback">
+          <label class="col-sm-2 control-label" for="error">Error</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="error">
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+          </div>
         </div>
 
       </form>
     </div>
+
+
   </body>
 </html>
